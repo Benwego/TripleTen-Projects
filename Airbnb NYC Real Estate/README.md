@@ -1,4 +1,4 @@
-# Manhattan Vacation Rental Market Analysis | MM/YY | [Your GitHub/Portfolio Link] | [Demo Link]
+# Manhattan Vacation Rental Market Analysis
 
 ## Project Overview
 In this hypothetical student project, I conducted an analysis of Airbnb listings in Manhattan to provide insights for a client looking to invest in vacation rental properties. The goal was to identify the most attractive neighborhoods and property sizes, and to assess the rental income potential of different property types. This project utilized Airbnb data to answer key business questions and provide data-driven recommendations for investment opportunities.
