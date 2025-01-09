@@ -1,6 +1,65 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2513
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww28600\viewh18000\viewkind0
-}
+# Requirements for "Turning Event Logs into Business Metrics" Project
+
+## Part 1: Build a Conversion Funnel
+1. **Create the Conversion Funnel**:
+   - Use the "raw_user_activity" sheet to build a conversion funnel.
+   - The funnel should have **3 stages**: product page views → cart opens → purchases.
+   - Count **unique users** at each stage of the funnel.
+   - Add columns in the pivot table to calculate:
+     - **Total conversion rate** (product page views to purchases).
+     - **Conversion rate to the next step** (e.g., product page views to cart opens, cart opens to purchases).
+
+## Part 2: Prepare Data for Cohort Analysis
+2. **Filter and Isolate Purchases**:
+   - Create a new sheet tab called `purchase_activity`.
+   - Filter out only the **purchase events** from the "raw_user_activity" sheet.
+   - Copy the filtered data into the `purchase_activity` sheet (you should have 4,845 rows).
+   - Reset the filter in the "raw_user_activity" sheet after copying.
+
+3. **Calculate First Purchase Dates**:
+   - Create a new pivot table in the `purchase_activity` sheet called `first_purchase`.
+   - In the pivot table, calculate the **first purchase date** (minimum `event_date`) for each user.
+   - Use a `VLOOKUP` function to add the `first_purchase_date` to each row in the `purchase_activity` sheet, corresponding to each user.
+
+4. **Set Up Monthly Data for Cohorts**:
+   - Create three new columns in the `purchase_activity` sheet:
+     - **event_month**: Use the `TEXT()` function to convert `event_date` to the YYYY-MM format.
+     - **first_purchase_month**: Use the `TEXT()` function to convert `first_purchase_date` to the YYYY-MM format.
+     - **cohort_age**: Use the `DATEDIF()` function to calculate the number of months between the `first_purchase_date` and the `event_date`.
+
+## Part 3: Calculate Retention Rates
+5. **Group Data into Cohorts**:
+   - Create a new pivot table in a new sheet called `cohort_analysis`.
+   - The pivot table should group users by their **first purchase month**.
+   - The pivot table should track users by **cohort age** (months 1 through 4).
+
+6. **Calculate Retention Rates**:
+   - Create a new sheet called `retention_rates`.
+   - Add row labels for each cohort (e.g., January 2022, February 2022, etc.).
+   - Add column labels for cohort ages (1 month, 2 months, 3 months, and 4 months).
+   - In the table, calculate **retention rates** for each cohort by dividing the number of users who made a purchase by the total users in the cohort (for each cohort age).
+
+## Part 4: Organize and Document the Spreadsheet
+7. **Executive Summary**:
+   - Fill in the `Executive Summary` sheet with:
+     - A brief summary of the key results and conclusions from your analysis (conversion funnel and retention rates).
+     - Key assumptions you made during the analysis.
+  
+8. **Reorder and Organize Sheets**:
+   - Organize the sheets in the following order:
+     1. **Table of Contents** sheet (first).
+     2. **Executive Summary** sheet (second).
+     3. Analytical results sheets (e.g., `conversion_funnel`, `retention_rates`).
+     4. Sheets used for calculations (e.g., `cohort_analysis`).
+     5. Raw data sheets (e.g., `raw_user_activity`).
+   - Fill in the **Table of Contents** with the organized sheet order and a brief description of each section.
+
+9. **Format for Readability**:
+   - Format numbers, dates, and cells for easy readability.
+   - Use borders, bold fonts for column headers, freeze top rows, and highlight key calculations for clarity.
+  
+## Part 5: Project Submission
+10. **Submit Your Project**:
+    - Share your Google Sheets file with **view-only access** by clicking the "Share" button and generating a shareable link.
+    - Include a link to your Google Sheets file in your submission for reviewers to access the project.
+
