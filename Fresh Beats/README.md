@@ -85,5 +85,3 @@ This project is based on a hypothetical scenario for a new ride-sharing company,
 2. **Reports and Analysis**: Insights on taxi company performance, the impact of weather on ride durations, and key recommendations for Zuber’s operational strategies.
 3. **Visualizations**: If applicable, visual representations of the data, including charts or graphs to support the analysis.
 
-Good luck with the analysis, and remember to keep the data interpretations consistent with the hypothetical nature of this project!
-
