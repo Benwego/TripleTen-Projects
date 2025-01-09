@@ -1,4 +1,4 @@
-# Zuber Ride-Sharing Analysis | MM/YY
+# Zuber Ride-Sharing Analysis 
 
 ### Project Overview
 
