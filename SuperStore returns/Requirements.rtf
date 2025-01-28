@@ -1,6 +1,56 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2513
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww28600\viewh18000\viewkind0
-}
+# Storytelling with Data: Superstore Returns Analysis
+
+## Overview
+This project aims to analyze the high number of returned orders at the Superstore and provide insights to the CEO on the root causes of returns and potential strategies to reduce the volume.
+
+## Requirements
+
+### 1. What is Causing Returns?
+- **Data Preparation**: 
+  - Left join the Returns table onto the Orders table.
+  - Create a calculated field for the "Returned" column where `null` = 0 and `Yes` = 1.
+  
+- **Worksheets**:
+  - **Scatterplot**: Correlation between total sales and total returns, aggregated by product subcategory.
+  - **Bar Chart**: Return rate by product category.
+  - **Customer Return Rate**: Return rate by customer (filter out customers with only 1 order).
+  - **Geographic Map**: Return rate by location (e.g., state, city).
+  - **Time-based Analysis**: Return rate by time (e.g., month, week).
+  - **Composite Charts**: Two different composite charts using multiple factors (e.g., date, geography, product category).
+
+### 2. Building a Dashboard for Monitoring Returns
+- **Low-fidelity Mockups**:
+  - Create 3 variations of pen-and-paper sketches for your dashboard.
+  - Scan or photograph the sketches.
+  
+- **Template and Dashboard Creation**:
+  - Design an empty dashboard template based on your chosen mock-up.
+  - Add worksheets to the template.
+  - Finalize the dashboard with titles, markers, and other visual elements.
+  
+- **Submission**:
+  - Submit mock-ups, templates, and the finalized dashboard.
+
+### 3. Presenting Your Analysis and Dashboard
+- **Draft Story**:
+  - Create a draft of your Tableau Story with captions summarizing:
+    - Analysis of returns (return rate, cost, and number of returns).
+    - Root causes of returns.
+    - Overview of each dashboard component and its interpretation.
+    - How to use the dashboard to identify root causes.
+    - Recommended actions based on dashboard insights.
+    - Proposed next steps (e.g., implementing the dashboard).
+  
+- **Story Creation**:
+  - Build your story in Tableau, incorporating necessary worksheets and dashboards.
+  - Add story points with detailed content.
+  
+- **Presentation**:
+  - Prepare a 3-5 minute presentation.
+  - Record or submit the presentation as a PDF.
+  
+### 4. Submitting Your Project
+- **Submission Package**:
+  - A ZIP archive including:
+    - README.md with a link to your Tableau Public dashboard.
+    - All relevant project files (max. 9 MB).
