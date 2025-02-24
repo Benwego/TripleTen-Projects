@@ -10,6 +10,6 @@ Portfolio of completed projects I worked on while attending the PROGRAM NAME Tri
 | 4 | [Zuber Database](https://github.com/Benwego/TripleTen-Projects/tree/main/Zuber%20Database) | used sql to extract data |
 | 5 | [SuperStore bankruptcy](https://github.com/Benwego/TripleTen-Projects/tree/main/SuperStore%20bankruptcy) | used tableau to analyze datat and create visualizations|
 | 6 | [SuperStore Returns](https://github.com/Benwego/TripleTen-Projects/tree/main/SuperStore%20returns) | used tableau to analyze data and create visualizations|
-| 7 | [Customer Analysis]() | Created a tableau dashboard visualition analyzing a fictional app's order and customer data |
+| 7 | [Customer Analysis](https://public.tableau.com/app/profile/ben.wegodsky/viz/CustomerAnalysisFinalProject/CustomerAnalysis) | Created a tableau dashboard visualition analyzing a fictional app's order and customer data |
 
 
